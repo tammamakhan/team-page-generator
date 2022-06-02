@@ -62,7 +62,7 @@ const generateInterns = (teamMembers) => {
 `;
 };
 
-const generatePage = (teamData) => {
+module.exports = (teamData) => {
   return `<!doctype html>
 <html lang="en">
   <head>
@@ -83,5 +83,3 @@ const generatePage = (teamData) => {
   </body>
 </html>`;
 };
-
-module.exports = generatePage;
