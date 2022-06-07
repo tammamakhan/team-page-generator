@@ -15,7 +15,7 @@ const generateManager = (manager) => {
 const generateEngineers = (teamMembers) => {
   return `${teamMembers
     .map((teamMember) => {
-      if (teamMember.getRole() !== "Engineer") return ``;
+      if (teamMember.getRole() !== "Engineer") return;
 
       return `<div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -40,7 +40,7 @@ const generateEngineers = (teamMembers) => {
 const generateInterns = (teamMembers) => {
   return `${teamMembers
     .map((teamMember) => {
-      if (teamMember.getRole() !== "Intern") return ``;
+      if (teamMember.getRole() !== "Intern") return;
 
       return `<div class="card" style="width: 18rem;">
   <div class="card-body">
