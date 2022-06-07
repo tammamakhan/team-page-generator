@@ -240,11 +240,11 @@ const init = () => {
   promptManager()
     .then(promptNewTeamMember)
     .then(() => {
-      console.log(teamData);
+      return generatePage(teamData);
     })
-    // .then((pageHTML) => {
-    //   return writeFile(pageHTML);
-    // })
+    .then((pageHTML) => {
+      return writeFile(pageHTML);
+    })
     .catch((err) => {
       console.log(err);
     });

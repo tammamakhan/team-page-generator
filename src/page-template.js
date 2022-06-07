@@ -1,3 +1,7 @@
+const Manager = require("../lib/Engineer");
+const Engineer = require("../lib/Engineer");
+const Intern = require("../lib/Intern");
+
 const generateManager = (manager) => {
   return `<div class="card" style="width: 18rem;">
   <div class="card-body">
@@ -27,10 +31,6 @@ const generateEngineers = (teamMembers) => {
     <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
     <li class="list-group-item">Github: <a href="https://github.com/${teamMember.getGithub()}" class="card-link">${teamMember.getGithub()}</a></li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
 </div>`;
     })
     .join("")}
@@ -52,10 +52,6 @@ const generateInterns = (teamMembers) => {
     <li class="list-group-item">Email: ${teamMember.getEmail()}</li>
     <li class="list-group-item">School: ${teamMember.getSchool()}</li>
   </ul>
-  <div class="card-body">
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
 </div>`;
     })
     .join("")}
