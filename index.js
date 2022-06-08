@@ -234,10 +234,10 @@ const promptIntern = async () => {
     });
 };
 
-const init = () => {
+const init = async () => {
   console.log("Please build your team:");
 
-  promptManager()
+  await promptManager()
     .then(promptNewTeamMember)
     .then(() => {
       return generatePage(teamData);
@@ -248,6 +248,8 @@ const init = () => {
     .catch((err) => {
       console.log(err);
     });
+
+  console.log("Team page created: ./dist/index.html");
 };
 
 init();
