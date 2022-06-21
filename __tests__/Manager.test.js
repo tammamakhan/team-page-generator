@@ -1,11 +1,12 @@
 const Manager = require("../lib/Manager");
 
 test("creates a manager object", () => {
-  const manager = new Manager("John", 1, "john@gmail.com");
+  const manager = new Manager("John", 1, "john@gmail.com", 22);
 
   expect(manager.name).toBe("John");
   expect(manager.id).toBe(1);
   expect(manager.email).toBe("john@gmail.com");
+  expect(manager.officeNumber).toBe(22);
 });
 
 test("gets a manager's name", () => {
