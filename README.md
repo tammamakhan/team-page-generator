@@ -4,6 +4,32 @@
 
 Command-line application that allows users to input information about their software engineering team. Program then generates an HTML web page that displays summaries for each person on the team.
 
+## Installation
+
+To install the necessary dependencies, run the following command:
+
+```
+npm i
+```
+
+## Usage
+
+To use the application, run the following command:
+
+```
+node index.js
+```
+
+See a walkthrough video [here](https://drive.google.com/file/d/1XBop6BbdlAxS6reAGUSHvmq_WHWoiPPh/view?usp=sharing)
+
+## Testing
+
+To run unit tests, run the following command:
+
+```
+npm test
+```
+
 ## User Story
 
 ```
